@@ -1,0 +1,131 @@
+.c-board {
+	&__wrap {
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+
+		@include max(lg) {
+			flex-wrap: wrap;
+			gap: 50px;
+
+			&-center {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		width: fit-content;
+	}
+
+	&__box {
+		background-color: $primary;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		cursor: pointer;
+		position: relative;
+		transform-style: preserve-3d;
+		transition: all .3s ease-in-out;
+		width: 60px;
+		height: 60px;
+		border: 1px solid $b;
+
+		@include min(md) {
+			width: 100px;
+			height: 100px;
+		}
+
+		&__item {
+			color: #fff;
+			position: absolute;
+			overflow-y: auto;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			transform: rotateY(180deg);
+			background-color: $secondary;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			font-size: 30px;
+		}
+
+		&.is-clicked {
+			transform: rotateY(180deg);
+		}
+	}
+
+	&__panel {
+		background-color: $grey-border;
+		min-height: 150px;
+		padding: 10px;
+		flex-basis: 35%;
+
+		@include max(lg) {
+			order: 2;
+		}
+
+		@include min(lg) {
+			flex-basis: 20%;
+			padding: 20px;
+		}
+
+		&.panel-trial {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 10px;
+			justify-content: space-between;
+
+			@include max(lg) {
+				order: 1;
+			}
+		}
+
+		.btn {
+			width: 100%;
+		}
+
+		&__color {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 5px;
+
+			span {
+				border: 1px solid $b;
+				width: 20px;
+				height: 20px;
+				cursor: pointer;
+				transition: opacity $time;
+
+				@include hover {
+					opacity: .5;
+				}
+
+				@include min(md) {
+					width: 30px;
+					height: 30px;
+				}
+			}
+		}
+
+		.block {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			width: 100%;
+			align-items: center;
+		}
+	}
+}
+

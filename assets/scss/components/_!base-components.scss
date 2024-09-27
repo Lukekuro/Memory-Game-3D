@@ -1,0 +1,39 @@
+// Base blocks
+.c-block {
+	margin-bottom: 80px;
+
+	@include min(lg) {
+		margin-bottom: 120px;
+	}
+
+	&--none {
+		margin: 0;
+	}
+
+	&--top,
+	&--both {
+		margin-top: 80px;
+
+		@include min(lg) {
+			margin-top: 120px;
+		}
+	}
+
+	&--top {
+		margin-bottom: 0;
+	}
+
+	&--padding {
+		padding: 80px;
+
+		@include min(lg) {
+			padding: 120px;
+		}
+	}
+}
+
+// Title
+.c-title {
+	display: block;
+	margin-bottom: 1em;
+}

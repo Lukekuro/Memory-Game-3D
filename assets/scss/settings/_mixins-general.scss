@@ -1,0 +1,66 @@
+// Shortened Transition
+@mixin tr($t: $default-transition) {
+	transition: $t;
+}
+
+// Responsive hover
+@mixin hover($bp: lg) {
+	@include min($bp) {
+		&:hover {
+			@content
+		}
+	}
+}
+
+// Responsive focus and active max
+@mixin focus-active-max($bp: lg) {
+	@include max($bp) {
+		&:focus,
+		&:active {
+			@content
+		}
+	}
+}
+
+// Placeholder for all browsers
+@mixin placeholder {
+	&:-ms-input-placeholder {
+		@content;
+	}
+
+	&:-moz-placeholder {
+		@content;
+	}
+
+	&::-moz-placeholder {
+		@content;
+	}
+
+	&::-webkit-input-placeholder {
+		@content;
+	}
+
+	&::placeholder {
+		@content;
+	}
+}
+
+// Clear default styling for button elements
+@mixin unstyled-button {
+	background-color: transparent;
+	color: currentColor;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	outline: unset;
+	text-decoration: none;
+}
+
+// Clear default styling for list elements
+@mixin unstyled-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+

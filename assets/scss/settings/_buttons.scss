@@ -1,0 +1,30 @@
+.btn {
+	@include tr;
+	height: 44px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	background-color: $b;
+	color: $w;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1;
+	border: 1px solid $b;
+	border-radius: $radius;
+	padding: 0 16px;
+	text-align: center;
+	cursor: pointer;
+
+	@include hover {
+		background-color: transparent;
+		border-color: $b;
+		color: $b;
+	}
+
+	@include focus-active-max {
+		background-color: transparent;
+		border-color: $b;
+		color: $b;
+	}
+}
