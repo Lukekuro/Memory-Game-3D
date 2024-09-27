@@ -1,4 +1,33 @@
-# Getting Started with Create React App
+# Memory Game 3D in React App
+
+Goal:
+Create a simple "Memory" type puzzle game where the user has to find pairs of cards by revealing them.
+
+What it includes:
+1. User interface:
+    * A game board that contains a set of cards (e.g. 4x4, i.e. 16 cards).
+    * Each card is initially covered, and when clicked, the card is revealed.
+    * The user can reveal two cards at once:
+    * If the cards are the same, they remain revealed.
+    * If the cards are different, they are covered again after a short while.
+    * The game ends when all cards are revealed.
+
+2. Application state:
+    * Using React hooks (useState) to manage the state of the cards (whether they are covered, revealed, matched).
+    * Updating the state after each player move (revealing cards, comparing them, resetting the game).
+
+3. Components:
+    * Card, Board, Game.
+
+4. Other:
+    * A move counter that shows how many attempts a player has made.
+    * High scores saved in localStorage.
+    * Animations when revealing cards.
+    * Card drawing features.
+
+
+
+# Getting Started with Create React App -- INFO about react
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
