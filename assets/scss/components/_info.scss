@@ -1,0 +1,14 @@
+.b-info {
+    &__contact {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .items {
+        display: flex;
+        gap: 10px;
+
+    }
+}

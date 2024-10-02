@@ -68,6 +68,10 @@ $color-array: (
 	pointer-events: none !important;
 }
 
+.justify-content-center {
+	justify-content: center;
+}
+
 .d-flex-center {
 	display: flex;
 	flex-direction: column;

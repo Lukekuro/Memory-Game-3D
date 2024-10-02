@@ -6,6 +6,14 @@
 		margin-bottom: 120px;
 	}
 
+	&--sm {
+		margin-bottom: 60px;
+
+		@include min(lg) {
+			margin-bottom: 80px;
+		}
+	}
+
 	&--none {
 		margin: 0;
 	}
@@ -17,10 +25,22 @@
 		@include min(lg) {
 			margin-top: 120px;
 		}
+
+		&--sm {
+			margin-top: 60px;
+
+			@include min(lg) {
+				margin-top: 80px;
+			}
+		}
 	}
 
 	&--top {
 		margin-bottom: 0;
+
+		&--sm {
+			margin-bottom: 0;
+		}
 	}
 
 	&--padding {

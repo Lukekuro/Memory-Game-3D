@@ -6,7 +6,7 @@
 
 		@include max(lg) {
 			flex-wrap: wrap;
-			gap: 50px;
+			row-gap: 50px;
 
 			&-center {
 				width: 100%;

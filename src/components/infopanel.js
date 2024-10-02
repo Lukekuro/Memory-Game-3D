@@ -8,7 +8,7 @@ export const InfoPanel = ({ trial, markReset, colors, markColor }) => {
 
     return (
         <div className="c-board__panel panel-trial">
-            <span className="text-lg">Próba: {trial}</span>
+            <span className="text-lg">Trial: {trial}</span>
             <div className="block">
                 <div className="c-board__panel__color">
                     {all_Colors}

@@ -149,3 +149,10 @@ iframe[src*="vimeo"] {
 	width: 100%;
 	flex-grow: 1;
 }
+
+@include max(xs) {
+	.container {
+		padding: 0 1.5rem;
+		width: inherit;
+	}
+}

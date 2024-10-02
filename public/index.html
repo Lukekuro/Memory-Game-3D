@@ -8,11 +8,68 @@
   </head>
   <body>
     <main class="site-content">
-      <section class="b-board c-block c-block--both">
-        <h1 class="text-center">Memory Game 3D</h1>
+      <section class="b-board c-block c-block--top">
+        <h1 class="text-center">Memory Game 3D in React</h1>
 
         <div class="container">
           <div id="js-board"></div>
+        </div>
+      </section>
+      <section class="b-info c-block c-block--top--sm">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <div class="editor">
+                <h3>This project was made specifically to perform a testing task for companies.</h3>
+      
+                <b>What it includes:</b>
+                <hr>
+      
+                <ul class="list-dot">
+                  <span>1. User interface:</span>
+                  <li>A game board that contains a set of cards (e.g. 4x4, i.e. 16 cards).</li>
+                  <li>Each card is initially covered, and when clicked, the card is revealed.</li>
+                  <li>The user can reveal two cards at once</li>
+                  <li>If the cards are the same, they remain revealed</li>
+                  <li>If the cards are different, they are covered again after a short while.</li>
+                  <li>The game ends when all cards are revealed</li>
+                </ul>
+                <hr>
+      
+                <ul class="list-dot">
+                  <span>2. Application state:</span>
+                  <li>Using React hooks (useState) to manage the state of the cards (whether they are covered, revealed, matched)</li>
+                  <li>Updating the state after each player move (revealing cards, comparing them, resetting the game)</li>
+                </ul>
+                
+                <ul class="list-dot">
+                  <span>3. Components:</span>
+                  <li>Card, Board, Game</li>
+                </ul>
+                
+                <ul class="list-dot">
+                  <span>4. Others:</span>
+                  <li>A move counter that shows how many attempts a player has made</li>
+                  <li>High scores saved in localStorage</li>
+                  <li>Animations when revealing cards</li>
+                  <li>Card drawing features</li>
+                </ul>
+
+                <hr>
+
+                <div class="b-info__contact">
+                  <h3>By Łukasz Kuros</h3>
+                  
+                  <div class="items">
+                    <a href="https://www.linkedin.com/in/lukasz-kuros/" target="_blank">Linkedin</a>
+                    <a href="https://github.com/Lukekuro" target="_blank">GitHub</a>
+                  </div>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

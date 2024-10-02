@@ -24,10 +24,10 @@ export const Score = ({ newscore }) => {
     return (
         <div className="c-board__panel">
             <span className="c-board__panel__score">
-                <span className="text-lg">Best Score: {bestScore !== null ? `${bestScore} ruchów` : 'Brak'}</span>
+                <span className="text-lg">Best Score: {bestScore !== null ? `${bestScore} moves` : 'Empty'}</span>
                 <hr></hr>
                 {newscore !== null && (
-                    <span className="text-lg">Twój wynik: {newscore} ruchy</span>
+                    <span className="text-lg">Your score: {newscore} moves</span>
                 )}
             </span>
         </div>
